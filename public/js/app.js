@@ -5,11 +5,13 @@ const dataDiv = document.getElementById('dataDiv')
 document.getElementById('button').addEventListener('click', () => {
     event.preventDefault();
     const place = inputText.value
+    //const path = process.env.PATH?!http://localhost:3000
+
     console.log("hello")
     console.log(place)
     dataDiv.innerHTML="loading..."
 
-    url = `http://localhost:3000/weather?address=${place}`
+    url = `/weather?address=${place}`
     fetch(url).then((response) => {
         response.json().then((data) => {
             console.log(data)
