@@ -6,6 +6,8 @@ const forecast = require('./utils/forecast')
 
 const app = express();
 
+const path = process.env.PORT
+
 //define paths for hbs config
 const publicDirPath = path.join(__dirname,'../public')
 const partialsPath = path.join(__dirname,'../views/partials');
@@ -72,6 +74,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is running');
+app.listen(port,()=>{
+    console.log('Server is running at port:'+port);
 })
