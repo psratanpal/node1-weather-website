@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>home page</title>
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="/js/app.js" defer></script>
-    </head>
-    <body>
-        <div class="main-content">
-             {{>header}}
-            <h1>WELCOME</h1>
 
-            <form >
-                <input type = "text" id = "input" placeholder="location">
-                <button id ='button'>click</button>
-            </form>
-        </div>
-        <div id="dataDiv">
+<head>
+    <title>home page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js" defer></script>
+    <link rel="icon" href="img/thumbnail.png">
+</head>
 
-        </div>
-        
-        {{>footer}}
-    </body>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h1>WELCOME</h1>
+
+        <form>
+            <input type="text" id="input" placeholder="location">
+            <button id='button'>click</button>
+        </form>
+        <P id="dataDiv" class="dataDiv">
+
+        </P>
+    </div>
+
+
+    {{>footer}}
+</body>
+
 </html>

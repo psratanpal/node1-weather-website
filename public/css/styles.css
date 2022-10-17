@@ -14,6 +14,10 @@ body {
     flex-grow: 1;
 }
 
+.dataDiv{
+    margin-top: 30px;
+}
+
 footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
@@ -39,4 +43,8 @@ header a {
 
 .portrait {
     width: 250px;
+}
+
+img {
+    width: 350px
 }

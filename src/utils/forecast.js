@@ -19,8 +19,9 @@ const forecast = (error,response,callback)=>{
                 // console.log("ERROR : "+errorHere);
             } else {
 
+                const locationName = data.location.name.toString() + " " +(data.location.region.toString()||'');
                 const responseObj = {
-                    locationName : data.location.name.toString(),
+                    locationName : locationName,
                     countryName : data.location.country.toString(),
                     temperature : data.current.temperature.toString(),
                     desription : data.current.weather_descriptions[0]
